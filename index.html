@@ -76,11 +76,71 @@
         .repo a:hover {
             text-decoration: underline;
         }
-
+/* 
         .repo img {
             width: 300px; 
             height: auto; 
+        } */
+
+        /* Container for all projects */
+        .projects-container {
+            display: flex;
+            flex-direction: column;
+            /* gap: 20px; Space between projects */
         }
+
+        .project-title {
+            padding-top: 10px; /* Space between projects */
+        }
+
+        /* Individual project card */
+        .project-card {
+            display: flex;
+            align-items: center;
+            background-color: #f9f9f9;
+            /* padding: 20px; */
+            margin-top: 0;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            gap: 20px; /* Space between image and details */
+        }
+
+        /* Project image */
+        .project-img {
+            width: 300px; /* Set the width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        /* Project details */
+        .project-details {
+            flex: 1; /* Takes remaining space */
+        }
+
+        /* Project title */
+        .project-details h3 {
+            margin-top: 0;
+            color: #005f73;
+        }
+
+        /* Technologies list */
+        .project-details ul {
+            list-style-type: disc; /* Adds bullets */
+            padding-left: 20px; /* Indents the list */
+            /* margin-top: 10px; */
+        }
+
+        /* GitHub link */
+        .project-link {
+            color: #0a9396;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
 
         footer {
             background-color: #005f73;
@@ -125,50 +185,190 @@
 
         <section id="projects" class="section">
             <h2>Projects</h2>
-            <div class="repo">
+            <div class="projects-container">
+                <!-- Project 1 -->
+                <div class="project-title"><h3>Self Driving RC Car</h3></div>
+                <div class="project-card">
+                    <img src="images/rc_car.jpeg" alt="Self Driving RC Car" class="project-img">
+                    <div class="project-details">
+                        <p>Developed a self-driving RC car with real-time control using LPC 4078, utilizing motion planning algorithms, sensor data, and GPS signals on the CAN bus for motor control.</p>
+                        <h4>Technologies Used:</h4>
+                        <ul>
+                            <li>LPC 4078 Microcontroller</li>
+                            <li>Motion Planning Algorithms</li>
+                            <li>GPS and CAN Bus</li>
+                        </ul>
+                        <a href="https://github.com/jincyjose49/self-driving-rc" target="_blank" class="project-link">View on GitHub</a>
+                    </div>
+                </div>
+            
+                <!-- Add more projects similarly -->
+
+                <div class="project-title"><h3>Go-Kart Race Track Timer</h3></div>
+                <div class="project-card">
+                    <img src="images/gokart_timer.jpeg" alt="Go-Kart Race Track Timer" class="project-img">
+                    <div class="project-details">
+                        <p>Developed a self-driving RC car with real-time control using LPC 4078, utilizing motion planning algorithms, sensor data, and GPS signals on the CAN bus for motor control.</p>
+                        <h4>Technologies Used:</h4>
+                        <ul>
+                            <li>LPC 4078 Microcontroller</li>
+                            <li>Motion Planning Algorithms</li>
+                            <li>GPS and CAN Bus</li>
+                        </ul>
+                        <a href="https://github.com/jincyjose49/self-driving-rc" target="_blank" class="project-link">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-title"><h3>Indoor Navigation for Shopping Robot</h3></div>
+                <div class="project-card">
+                    <img src="images/shopping_robot.jpg" alt="Indoor Navigation for Shopping Robot" class="project-img">
+                    <div class="project-details">
+                        <p>Developed a self-driving RC car with real-time control using LPC 4078, utilizing motion planning algorithms, sensor data, and GPS signals on the CAN bus for motor control.</p>
+                        <h4>Technologies Used:</h4>
+                        <ul>
+                            <li>LPC 4078 Microcontroller</li>
+                            <li>Motion Planning Algorithms</li>
+                            <li>GPS and CAN Bus</li>
+                        </ul>
+                        <a href="https://github.com/jincyjose49/self-driving-rc" target="_blank" class="project-link">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-title"><h3>StoreBot</h3></div>
+                <div class="project-card">
+                    <img src="images/rc_car.jpeg" alt="StoreBot" class="project-img">
+                    <div class="project-details">
+                        <p>Developed a self-driving RC car with real-time control using LPC 4078, utilizing motion planning algorithms, sensor data, and GPS signals on the CAN bus for motor control.</p>
+                        <h4>Technologies Used:</h4>
+                        <ul>
+                            <li>LPC 4078 Microcontroller</li>
+                            <li>Motion Planning Algorithms</li>
+                            <li>GPS and CAN Bus</li>
+                        </ul>
+                        <a href="https://github.com/jincyjose49/self-driving-rc" target="_blank" class="project-link">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-title"><h3>LoRa-based Smart Farming</h3></div>
+                <div class="project-card">
+                    <img src="images/rc_car.jpeg" alt="LoRa-based Smart Farming" class="project-img">
+                    <div class="project-details">
+                        <p>Developed a self-driving RC car with real-time control using LPC 4078, utilizing motion planning algorithms, sensor data, and GPS signals on the CAN bus for motor control.</p>
+                        <h4>Technologies Used:</h4>
+                        <ul>
+                            <li>LPC 4078 Microcontroller</li>
+                            <li>Motion Planning Algorithms</li>
+                            <li>GPS and CAN Bus</li>
+                        </ul>
+                        <a href="https://github.com/jincyjose49/self-driving-rc" target="_blank" class="project-link">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-title"><h3>3D Graphics Engine</h3></div>
+                <div class="project-card">
+                    <img src="images/rc_car.jpeg" alt="Go-Kart Race Track Timer" class="project-img">
+                    <div class="project-details">
+                        <p>Developed a self-driving RC car with real-time control using LPC 4078, utilizing motion planning algorithms, sensor data, and GPS signals on the CAN bus for motor control.</p>
+                        <h4>Technologies Used:</h4>
+                        <ul>
+                            <li>LPC 4078 Microcontroller</li>
+                            <li>Motion Planning Algorithms</li>
+                            <li>GPS and CAN Bus</li>
+                        </ul>
+                        <a href="https://github.com/jincyjose49/self-driving-rc" target="_blank" class="project-link">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-title"><h3>BLE based Health Monitoring System</h3></div>
+                <div class="project-card">
+                    <img src="images/rc_car.jpeg" alt="BLE based Health Monitoring System" class="project-img">
+                    <div class="project-details">
+                        <p>Developed a self-driving RC car with real-time control using LPC 4078, utilizing motion planning algorithms, sensor data, and GPS signals on the CAN bus for motor control.</p>
+                        <h4>Technologies Used:</h4>
+                        <ul>
+                            <li>LPC 4078 Microcontroller</li>
+                            <li>Motion Planning Algorithms</li>
+                            <li>GPS and CAN Bus</li>
+                        </ul>
+                        <a href="https://github.com/jincyjose49/self-driving-rc" target="_blank" class="project-link">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-title"><h3>ARM based BLuetooth Controlled Toycar</h3></div>
+                <div class="project-card">
+                    <img src="images/rc_car.jpeg" alt="ARM based BLuetooth Controlled Toycar" class="project-img">
+                    <div class="project-details">
+                        <p>Developed a self-driving RC car with real-time control using LPC 4078, utilizing motion planning algorithms, sensor data, and GPS signals on the CAN bus for motor control.</p>
+                        <h4>Technologies Used:</h4>
+                        <ul>
+                            <li>LPC 4078 Microcontroller</li>
+                            <li>Motion Planning Algorithms</li>
+                            <li>GPS and CAN Bus</li>
+                        </ul>
+                        <a href="https://github.com/jincyjose49/self-driving-rc" target="_blank" class="project-link">View on GitHub</a>
+                    </div>
+                </div>
+
+                <div class="project-title"><h3>Enhanced Safety Device for Passengers</h3></div>
+                <div class="project-card">
+                    <img src="images/rc_car.jpeg" alt="Enhanced Safety Device for Passengers" class="project-img">
+                    <div class="project-details">
+                        <p>Developed a self-driving RC car with real-time control using LPC 4078, utilizing motion planning algorithms, sensor data, and GPS signals on the CAN bus for motor control.</p>
+                        <h4>Technologies Used:</h4>
+                        <ul>
+                            <li>LPC 4078 Microcontroller</li>
+                            <li>Motion Planning Algorithms</li>
+                            <li>GPS and CAN Bus</li>
+                        </ul>
+                        <a href="https://github.com/jincyjose49/self-driving-rc" target="_blank" class="project-link">View on GitHub</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- <div class="repo">
                 <div>
                     <h3>Self Driving RC Car</h3>
                     <p>Developed a self-driving RC car with real-time control using LPC 4078, utilizing motion planning algorithms, sensor data, and GPS signals on the CAN bus for motor control.</p>
                     <img src="images/rc_car.jpeg" alt="Self Driving RC Car" class="project-img"> <br>
-                    <!-- <img src="images/rc_car.jpeg" alt="Self Driving RC Car" style="width: 100px; height: auto;"> <br> -->
+                     <img src="images/rc_car.jpeg" alt="Self Driving RC Car" style="width: 100px; height: auto;"> <br> -->
 
-                    <a href="https://github.com/jincyjose49/self-driving-rc" target="_blank">View on GitHub</a>
+                    <!-- <a href="https://github.com/jincyjose49/self-driving-rc" target="_blank">View on GitHub</a>
                 </div>
-            </div>
-            <div class="repo">
+            </div> --> 
+            <!-- <div class="repo">
                 <div>
                     <h3>Go-Kart Race Track Timer</h3>
                     <p>Developed a self-driving RC car with real-time control using LPC 4078, utilizing motion planning algorithms, sensor data, and GPS signals on the CAN bus for motor control.</p>
                     <img src="images/self-driving-rc.jpg" alt="Self Driving RC Car" class="project-img">
                     <a href="https://github.com/jincyjose49/self-driving-rc" target="_blank">View on GitHub</a>
                 </div>
-            </div>
-            <div class="repo">
+            </div> -->
+            <!-- <div class="repo">
                 <div>
                     <h3>Indoor Navigation for Shopping Robot</h3>
                     <p>Developed a self-driving RC car with real-time control using LPC 4078, utilizing motion planning algorithms, sensor data, and GPS signals on the CAN bus for motor control.</p>
                     <img src="images/self-driving-rc.jpg" alt="Self Driving RC Car">
                     <a href="https://github.com/jincyjose49/self-driving-rc" target="_blank">View on GitHub</a>
                 </div>
-            </div>            
-            <div class="repo">
+            </div>             -->
+            <!-- <div class="repo">
                 <div>
                     <h3>StoreBot</h3>
                     <p>Developed a self-driving RC car with real-time control using LPC 4078, utilizing motion planning algorithms, sensor data, and GPS signals on the CAN bus for motor control.</p>
                     <img src="images/self-driving-rc.jpg" alt="Self Driving RC Car"> <br>
                     <a href="https://github.com/jincyjose49/self-driving-rc" target="_blank">View on GitHub</a>
                 </div>
-            </div> 
+            </div>  -->
 
-            <div class="repo">
+            <!-- <div class="repo">
                 <div>
                     <h3>LoRa-based Smart Farming</h3>
                     <p>Developed a self-driving RC car with real-time control using LPC 4078, utilizing motion planning algorithms, sensor data, and GPS signals on the CAN bus for motor control.</p>
                     <img src="images/self-driving-rc.jpg" alt="Self Driving RC Car"> <br>
                     <a href="https://github.com/jincyjose49/self-driving-rc" target="_blank">View on GitHub</a>
                 </div>
-            </div>
-
+            </div> -->
+<!-- 
             <div class="repo">
                 <div>
                     <h3>3D Graphics Engine</h3>
@@ -176,34 +376,34 @@
                     <img src="images/self-driving-rc.jpg" alt="Self Driving RC Car"> <br>
                     <a href="https://github.com/jincyjose49/self-driving-rc" target="_blank">View on GitHub</a>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="repo">
+            <!-- <div class="repo">
                 <div>
                     <h3>BLE based Health Monitoring System</h3>
                     <p>Developed a self-driving RC car with real-time control using LPC 4078, utilizing motion planning algorithms, sensor data, and GPS signals on the CAN bus for motor control.</p>
                     <img src="images/self-driving-rc.jpg" alt="Self Driving RC Car"> <br>
                     <a href="https://github.com/jincyjose49/self-driving-rc" target="_blank">View on GitHub</a>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="repo">
+            <!-- <div class="repo">
                 <div>
                     <h3>ARM based BLuetooth Controlled Toycar</h3>
                     <p>Developed a self-driving RC car with real-time control using LPC 4078, utilizing motion planning algorithms, sensor data, and GPS signals on the CAN bus for motor control.</p>
                     <img src="images/self-driving-rc.jpg" alt="Self Driving RC Car"> <br>
                     <a href="https://github.com/jincyjose49/self-driving-rc" target="_blank">View on GitHub</a>
                 </div>
-            </div>       
+            </div>        -->
  
-            <div class="repo">
+            <!-- <div class="repo">
                 <div>
                     <h3>Enhanced Safety Device for Passengers</h3>
                     <p>Developed a self-driving RC car with real-time control using LPC 4078, utilizing motion planning algorithms, sensor data, and GPS signals on the CAN bus for motor control.</p>
                     <img src="images/self-driving-rc.jpg" alt="Self Driving RC Car"> <br>
                     <a href="https://github.com/jincyjose49/self-driving-rc" target="_blank">View on GitHub</a>
                 </div>
-            </div> 
+            </div>  -->
 
         </section>
 
