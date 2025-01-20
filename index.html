@@ -96,7 +96,7 @@
         /* Individual project card */
         .project-card {
             display: flex;
-            align-items: center;
+            align-items: start;
             background-color: #f9f9f9;
             /* padding: 20px; */
             margin-top: 0;
@@ -121,6 +121,9 @@
         .project-details h3 {
             margin-top: 0;
             color: #005f73;
+        }
+        .project-details P {
+            justify-content: center;
         }
 
         /* Technologies list */
@@ -168,10 +171,10 @@
     <nav>
         <a href="#about">About Me</a>
         <a href="#projects">Projects</a>
-        <a href="#course">Course Work</a>
+        <a href="#awards">Awards</a>
         <a href="#publications">Publications</a>
         <a href="#certifications">Certifications</a>
-        <a href="#awards">Awards</a>
+        <a href="#course">Course Work</a>
         <a href="#contact">Contact</a>
     </nav>
 
@@ -190,15 +193,22 @@
                 <div class="project-title"><h3>Self Driving RC Car</h3></div>
                 <div class="project-card">
                     <img src="images/rc_car.jpeg" alt="Self Driving RC Car" class="project-img">
+                    
                     <div class="project-details">
-                        <p>Developed a self-driving RC car with real-time control using LPC 4078, utilizing motion planning algorithms, sensor data, and GPS signals on the CAN bus for motor control.</p>
+                        <p>Led a team of 4 for developing a self-driving RC car with real-time control using LPC 4078 RTOS board, utilizing motion planning algorithms, sensor data, and GPS signals on the CAN bus for motor control.
+                        The car has 4 nodes - sensor node and GPS node as input, motor node as the output and driver node for processing. Each node communicate with each other using CAN bus.
+                        The car avoids obstacles, and reach the provided destination using GPS. Shortest path is used for traversal from source to destination. GPS location is given through android app.</p>
                         <h4>Technologies Used:</h4>
                         <ul>
-                            <li>LPC 4078 Microcontroller</li>
-                            <li>Motion Planning Algorithms</li>
-                            <li>GPS and CAN Bus</li>
+                            <li>LPC 4078 Microcontroller used for test driven development.</li>
+                            <li>RTOS and Periodic Scheduling were used to schedule tasks at different frequencies.</li>
+                            <li>Motion Planning Algorithms for smooth movement of car with obstacle avoidance and GPS Navigation.</li>
+                            <li>GPS, UART, I2C, BLuetooth, PWM, CAN Bus.</li>
+                            <li>Coding is done in C.</li>
+                            <li>Testing done using frameworks like CMock and Unity.</li>
+                            <li>Sensors include ultrasonic sensor, Bluetooth module, Compass, GPS module, LCD, RPM sensor, motors.</li>
                         </ul>
-                        <a href="https://github.com/jincyjose49/self-driving-rc" target="_blank" class="project-link">View on GitHub</a>
+                        <a href="https://gitlab.com/jincyjose491/sjtwo-c/-/tree/feature/project_v1?ref_type=heads" target="_blank" class="project-link">View on GitLab</a>
                     </div>
                 </div>
             
@@ -208,14 +218,16 @@
                 <div class="project-card">
                     <img src="images/gokart_timer.jpeg" alt="Go-Kart Race Track Timer" class="project-img">
                     <div class="project-details">
-                        <p>Developed a self-driving RC car with real-time control using LPC 4078, utilizing motion planning algorithms, sensor data, and GPS signals on the CAN bus for motor control.</p>
+                        <p>Developed a go-kart racetrack timer with 2 others using Raspberry Pi, python, RGB LED matrix, LiDAR, microphone, mode changing buttons and BLE thermal printer.
+                        2 LiDARs were used to detect go-karts, eliminate reverse movements from calculations and detect whether it is person or go-kart crossed.
+                        2 64x64 RGB LED matrix were used for displaying status, give animations for race status notification and display results.
+                        Microphone was used to input driver names and number of laps. Buttons were used to add features like scroll and reset. Thermal printer was used to print out status of each driver.
+                        </p>
                         <h4>Technologies Used:</h4>
                         <ul>
-                            <li>LPC 4078 Microcontroller</li>
-                            <li>Motion Planning Algorithms</li>
-                            <li>GPS and CAN Bus</li>
+                            <li>Raspberry Pi, Python, UART, BLE</li>
                         </ul>
-                        <a href="https://github.com/jincyjose49/self-driving-rc" target="_blank" class="project-link">View on GitHub</a>
+                        <a href="https://gitlab.com/navaneeth.paliath/RaceTrackTimer/-/tree/led_matrix_display?ref_type=heads" target="_blank" class="project-link">View on GitLab</a>
                     </div>
                 </div>
 
@@ -223,42 +235,48 @@
                 <div class="project-card">
                     <img src="images/shopping_robot.jpg" alt="Indoor Navigation for Shopping Robot" class="project-img">
                     <div class="project-details">
-                        <p>Developed a self-driving RC car with real-time control using LPC 4078, utilizing motion planning algorithms, sensor data, and GPS signals on the CAN bus for motor control.</p>
+                        <p>Individually developed a shopping robot for indoor environment with real-time control using LPC 1769. Several motion planning algorithms were developed for smooth navigation of any given indoor environment.
+                        Algorithms were developed for finding the territory of traversal, locating obstacles in the given area and converting it to a 2D map. Whenever destination location is given as input coordinates, robot moves to there,
+                         taking the shortest path and avoiding obstacles. Accelerometer and magnetometer was used develop the indoor coordinates and route map.
+                         This project received first prize in state government technical fest for robotics track.
+                        </p>
                         <h4>Technologies Used:</h4>
                         <ul>
-                            <li>LPC 4078 Microcontroller</li>
-                            <li>Motion Planning Algorithms</li>
-                            <li>GPS and CAN Bus</li>
+                            <li>LPC 1769 Microcontroller was interfaced with different sensors and coding was done in C.</li>
+                            <li>Algorithms to find area, obstacles, mapping and shortest route traversal.</li>
+                            <li>UART, I2C, PWM, Bluetooth, ADC</li>
                         </ul>
-                        <a href="https://github.com/jincyjose49/self-driving-rc" target="_blank" class="project-link">View on GitHub</a>
+                        <a href="https://github.com/jincyjose94/StoreBot" target="_blank" class="project-link">View on GitHub</a>
                     </div>
                 </div>
 
                 <div class="project-title"><h3>StoreBot</h3></div>
                 <div class="project-card">
-                    <img src="images/rc_car.jpeg" alt="StoreBot" class="project-img">
+                    <img src="images/storebot.png" alt="StoreBot" class="project-img">
                     <div class="project-details">
-                        <p>Developed a self-driving RC car with real-time control using LPC 4078, utilizing motion planning algorithms, sensor data, and GPS signals on the CAN bus for motor control.</p>
+                        <p>Individually developed a robot that could be used in the stores to move, pick and place objects. This has a robotic arm with multiple motors for all movements. Self made navigation algorithms were used for store bot movement.
+                            Prototype board using LPC 1769 was developed for the project.
+                        </p>
                         <h4>Technologies Used:</h4>
                         <ul>
-                            <li>LPC 4078 Microcontroller</li>
-                            <li>Motion Planning Algorithms</li>
-                            <li>GPS and CAN Bus</li>
+                            <li>LPC 1769 Microcontroller, LSM303 Accelerometer and magnetometer, ultrasonic sensors, photoelectric encoder, HC-06 Bluetooth module.</li>
+                            <li>Autonomous navigation algorithms</li>
+                            <li>UART, I2C, PWM, Bluetooth</li>
                         </ul>
-                        <a href="https://github.com/jincyjose49/self-driving-rc" target="_blank" class="project-link">View on GitHub</a>
+                        <a href="https://github.com/jincyjose94/StoreBot" target="_blank" class="project-link">View on GitHub</a>
                     </div>
                 </div>
 
                 <div class="project-title"><h3>LoRa-based Smart Farming</h3></div>
                 <div class="project-card">
-                    <img src="images/rc_car.jpeg" alt="LoRa-based Smart Farming" class="project-img">
+                    <img src="images/lora_progress.jpg" alt="LoRa-based Smart Farming" class="project-img">
                     <div class="project-details">
-                        <p>Developed a self-driving RC car with real-time control using LPC 4078, utilizing motion planning algorithms, sensor data, and GPS signals on the CAN bus for motor control.</p>
+                        <p>Working on a precision farming project with 2 other people for improving effciency in agriculture.</p>
                         <h4>Technologies Used:</h4>
                         <ul>
-                            <li>LPC 4078 Microcontroller</li>
-                            <li>Motion Planning Algorithms</li>
-                            <li>GPS and CAN Bus</li>
+                            <li>Raspberry Pi</li>
+                            <li>LoRa transmission</li>
+                            <li>Sensor node, Gateway, Cloud and Dashboard.</li>
                         </ul>
                         <a href="https://github.com/jincyjose49/self-driving-rc" target="_blank" class="project-link">View on GitHub</a>
                     </div>
@@ -266,61 +284,73 @@
 
                 <div class="project-title"><h3>3D Graphics Engine</h3></div>
                 <div class="project-card">
-                    <img src="images/rc_car.jpeg" alt="Go-Kart Race Track Timer" class="project-img">
+                    <img src="images/3d_graphics.jpeg" alt="3D Graphics Engine" class="project-img">
                     <div class="project-details">
-                        <p>Developed a self-driving RC car with real-time control using LPC 4078, utilizing motion planning algorithms, sensor data, and GPS signals on the CAN bus for motor control.</p>
+                        <p>Developed a 3D graphics engine using LPC 11C24 and SPI based LCD interface. Created a screensaver using rotating squares and 2D forest with branches upto 10 levels.
+                            DEveloped a 3D shading model and diffuse reflection computation for a cube.
+                        </p>
                         <h4>Technologies Used:</h4>
                         <ul>
-                            <li>LPC 4078 Microcontroller</li>
-                            <li>Motion Planning Algorithms</li>
-                            <li>GPS and CAN Bus</li>
+                            <li>LPC 11C24 Microcontroller.</li>
+                            <li>SPI interface, algorithms like DFS.</li>
+                            <li>Coding was done in C. </li>
                         </ul>
-                        <a href="https://github.com/jincyjose49/self-driving-rc" target="_blank" class="project-link">View on GitHub</a>
+                        <a href="https://github.com/jincyjose94/3D_Graphics_Engine" target="_blank" class="project-link">View on GitHub</a>
                     </div>
                 </div>
 
                 <div class="project-title"><h3>BLE based Health Monitoring System</h3></div>
                 <div class="project-card">
-                    <img src="images/rc_car.jpeg" alt="BLE based Health Monitoring System" class="project-img">
+                    <img src="images/ble_health.png" alt="BLE based Health Monitoring System" class="project-img">
                     <div class="project-details">
-                        <p>Developed a self-driving RC car with real-time control using LPC 4078, utilizing motion planning algorithms, sensor data, and GPS signals on the CAN bus for motor control.</p>
+                        <p>Developed a prototype for real time health monitoring system Arduino Board, pulse sensor, temperature sensor, BLE and LCD display.
+                            The measured parameters were filtered and displayed on LCD for debuggiing. Final accurate values were transmitted via BLE characteristics to Android phone.
+                        </p>
                         <h4>Technologies Used:</h4>
                         <ul>
-                            <li>LPC 4078 Microcontroller</li>
-                            <li>Motion Planning Algorithms</li>
-                            <li>GPS and CAN Bus</li>
+                            <li>Arduino, I2C LCD, sensors and BLE</li>
+                           
                         </ul>
-                        <a href="https://github.com/jincyjose49/self-driving-rc" target="_blank" class="project-link">View on GitHub</a>
+                        <a href="https://github.com/jincyjose94/IoT-based-Health-Monitoring-System" target="_blank" class="project-link">View on GitHub</a>
                     </div>
                 </div>
 
-                <div class="project-title"><h3>ARM based BLuetooth Controlled Toycar</h3></div>
+                <div class="project-title"><h3>ARM based BLuetooth Controlled Toy Robot</h3></div>
                 <div class="project-card">
-                    <img src="images/rc_car.jpeg" alt="ARM based BLuetooth Controlled Toycar" class="project-img">
+                    <img src="images/ble_toycar.png" alt="ARM based BLuetooth Controlled Toycar" class="project-img">
                     <div class="project-details">
-                        <p>Developed a self-driving RC car with real-time control using LPC 4078, utilizing motion planning algorithms, sensor data, and GPS signals on the CAN bus for motor control.</p>
+                        <p>Developed a toy car that moved according to control signals send from a mobile application.
+                            A Bluetooth module was interfaced using UART protocol for transmission of control signals.
+                            Motors were interfaced using PWM. Developed UART driver for communication. Developed a 4 layer PCB board for protoype. 
+                        </p>
                         <h4>Technologies Used:</h4>
                         <ul>
-                            <li>LPC 4078 Microcontroller</li>
-                            <li>Motion Planning Algorithms</li>
-                            <li>GPS and CAN Bus</li>
+                            <li>LPC 1769 Microcontroller, UART, BLuetooth, PWM</li>
+                            <li>C coding</li>
+                            
                         </ul>
-                        <a href="https://github.com/jincyjose49/self-driving-rc" target="_blank" class="project-link">View on GitHub</a>
+                        <a href="https://github.com/jincyjose94/Bluetooth-Controlled-Toy-Robot" target="_blank" class="project-link">View on GitHub</a>
                     </div>
                 </div>
 
                 <div class="project-title"><h3>Enhanced Safety Device for Passengers</h3></div>
                 <div class="project-card">
-                    <img src="images/rc_car.jpeg" alt="Enhanced Safety Device for Passengers" class="project-img">
+                    <img src="images/driver_safety.png" alt="Enhanced Safety Device for Passengers" class="project-img">
                     <div class="project-details">
-                        <p>Developed a self-driving RC car with real-time control using LPC 4078, utilizing motion planning algorithms, sensor data, and GPS signals on the CAN bus for motor control.</p>
+                        <p>Developed a safety device along with 3 others to perform alcohol detection, sleep detection, call detection, person level identification and accident detection using PIC16F887 microcontroller and various sensors. 
+                            The ignition is activated only if the driver is confirmed rid of alcohol.  When the vehicle is running, 
+                            continuous monitoring is carried out to detect accidents, incoming calls to the driver and whether the driver is sleeping .
+                            A mechanism to detect human presence inside a locked car is also implemented. 
+                            Each method is used to rectify the carelessness of the driver and immediate intimation of accident is provided by the use of GSM technology. 
+                            The system will send the accident location acquired from GPS along with the time. This will help the rescue service to reach in time and save the valuable human life.  
+                            The simulation has been carried out in Proteus and the prototype is devised. .</p>
                         <h4>Technologies Used:</h4>
                         <ul>
-                            <li>LPC 4078 Microcontroller</li>
-                            <li>Motion Planning Algorithms</li>
-                            <li>GPS and CAN Bus</li>
+                            <li>PIC16F887 Microcontroller, GPS, GSM, GPIO.</li>
+                            <li>Embedded C coding</li>
+                            
                         </ul>
-                        <a href="https://github.com/jincyjose49/self-driving-rc" target="_blank" class="project-link">View on GitHub</a>
+                        <a href="https://github.com/jincyjose94/Enhanced-Safety-Device-for-Passengers" target="_blank" class="project-link">View on GitHub</a>
                     </div>
                 </div>
 
@@ -407,6 +437,37 @@
 
         </section>
 
+        <section id="awards" class="section">
+            <h2>Awards</h2>
+            <ul>
+                <li>State Government level Technical Fest - First Prize in Robotics Track (2018)</li>
+                <li>Government of India Scholarship and GATE qualified for my first masters(2016)</li>
+                <li>Best Project - Embedded Systems Applications (CMPE 243) (2024)</li>
+            </ul>
+        </section>
+
+        
+        <section id="publications" class="section">
+            <h2>Publications</h2>
+            <ul>
+                <li><a href="http://ijream.org/papers/IJREAMV04I0440066.pdf">Indoor Navigation for Shopping Robot (2018)</a></li>
+                <li><a href="https://drive.google.com/open?id=11_5t4z3Zo2cwLTAVEPL8uoMv-3lvcM-s">StoreBot (2018)</a></li>
+                <li><a href="https://www.ijert.org/research/an-intelligent-microcontroller-based-system-for-driver-and-passenger-safety-IJERTCONV4IS17023.pdf">An Intelligent Microcontroller Based System for  Driver and Passenger Safety (2016)</a></li>
+            </ul>
+        </section>
+        
+        <section id="certifications" class="section">
+            <h2>Certifications</h2>
+            <ul>
+                <li><a href="https://www.coursera.org/account/accomplishments/certificate/ZCC4W7ZRW7UG">Algorithmic Toolbox</a></li>
+                <li><a href="https://www.freecodecamp.org/certification/jincyjose/javascript-algorithms-and-data-structures">Algorithms and Data Structures</a></li>
+                <li><a href="https://www.linkedin.com/learning/certificates/f6800b08b65a6dd82949793ab574e7e69ecf55c4982c424b0c77a6f1d4be4988?trk=backfilled_certificate">SQL Essential Training</a></li>
+                <li><a href="https://www.linkedin.com/learning/certificates/e1a27179e7aec0629e34e312b46f4c172c7c3267fb502f3265d27af60ccc0562?trk=backfilled_certificate">JavaScript Essential Training</a></li>
+                <li><a href="https://www.linkedin.com/learning/certificates/84e73fb262954380bd3036b264077387cb82114c57510af83f86e710d15e8af4?trk=backfilled_certificate">Learning the JavaScript Language</a></li>
+            </ul>
+        </section>
+
+        
         <section id="course" class="section">
             <h2>Course Work</h2>
             <ul>
@@ -420,34 +481,6 @@
             </ul>
         </section>
 
-        <section id="certifications" class="section">
-            <h2>Certifications</h2>
-            <ul>
-                <li><a href="https://www.coursera.org/account/accomplishments/certificate/ZCC4W7ZRW7UG">Algorithmic Toolbox</a></li>
-                <li><a href="https://www.freecodecamp.org/certification/jincyjose/javascript-algorithms-and-data-structures">Algorithms and Data Structures</a></li>
-                <li><a href="https://www.linkedin.com/learning/certificates/f6800b08b65a6dd82949793ab574e7e69ecf55c4982c424b0c77a6f1d4be4988?trk=backfilled_certificate">SQL Essential Training</a></li>
-                <li><a href="https://www.linkedin.com/learning/certificates/e1a27179e7aec0629e34e312b46f4c172c7c3267fb502f3265d27af60ccc0562?trk=backfilled_certificate">JavaScript Essential Training</a></li>
-                <li><a href="https://www.linkedin.com/learning/certificates/84e73fb262954380bd3036b264077387cb82114c57510af83f86e710d15e8af4?trk=backfilled_certificate">Learning the JavaScript Language</a></li>
-            </ul>
-        </section>
-
-        <section id="publications" class="section">
-            <h2>Publications</h2>
-            <ul>
-                <li><a href="http://ijream.org/papers/IJREAMV04I0440066.pdf">Indoor Navigation for Shopping Robot (2018)</a></li>
-                <li><a href="https://drive.google.com/open?id=11_5t4z3Zo2cwLTAVEPL8uoMv-3lvcM-s">StoreBot (2018)</a></li>
-                <li><a href="https://www.ijert.org/research/an-intelligent-microcontroller-based-system-for-driver-and-passenger-safety-IJERTCONV4IS17023.pdf">An Intelligent Microcontroller Based System for  Driver and Passenger Safety (2016)</a></li>
-            </ul>
-        </section>
-
-        <section id="awards" class="section">
-            <h2>Awards</h2>
-            <ul>
-                <li>State Government level Technical Fest - First Prize in Robotics Track (2018)</li>
-                <li>Government of India Scholarship and GATE qualified for my first masters(2016)</li>
-                <li>Best Project - Embedded Systems Applications (CMPE 243) (2024)</li>
-            </ul>
-        </section>
         <section id="contact" class="section">
             <h2>Contact</h2>
             <p>
