@@ -11,7 +11,7 @@
             margin: 0;
             padding: 0;
             color: #333;
-            background-color: #f4f4f9;
+            background-color: #bdeadc;
         }
 
         header {
@@ -32,7 +32,7 @@
         }
 
         nav a {
-            color: #ffffff;
+            color:#f0f8ff;
             text-decoration: none;
             margin: 0 15px;
             font-weight: bold;
@@ -46,7 +46,7 @@
             max-width: 1200px;
             margin: 20px auto;
             padding: 20px;
-            background: #ffffff;
+            background: #a7d4c5;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
@@ -82,6 +82,27 @@
             height: auto; 
         } */
 
+        .about-content {
+            display: flex;
+            align-items: center; /* Vertically align content */
+            justify-content: space-between; /* Space between text and image */
+            gap: 20px; /* Add spacing between text and image */
+        }
+
+        .about-content p {
+            flex: 1; /* Allow the text to take up remaining space */
+            margin: 0; /* Remove extra margin for better alignment */
+            font-size: 1.1rem; /* Optional: Adjust text size */
+        }
+
+        .profile-picture {
+            width: 150px; /* Set the image width */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 50%; /* Make the image circular */
+            border: 2px solid #333; /* Optional: Add a border */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow */
+        }
+
         /* Container for all projects */
         .projects-container {
             display: flex;
@@ -97,7 +118,7 @@
         .project-card {
             display: flex;
             align-items: start;
-            background-color: #f9f9f9;
+            background-color: #d9f0eb;
             /* padding: 20px; */
             margin-top: 0;
             border-radius: 8px;
@@ -181,11 +202,14 @@
     <div class="container">
         <section id="about" class="section">
             <h2>About Me</h2>
-            <p>
-                I am a dedicated Embedded Software Engineer with a passion for real-time systems, software/firmware development, 
-                and IoT applications. With hands-on experience in embedded systems development and a Master's degree in Computer Engineering, 
-                I excel in creating innovative solutions that bridge hardware and software.
-            </p>
+            <div class="about-content">
+                <p>
+                    I am a dedicated Embedded Software Engineer with a passion for real-time systems, software/firmware development, 
+                    and IoT applications. With hands-on experience in embedded systems development and a Master's degree in Computer Engineering, 
+                    I excel in creating innovative solutions that bridge hardware and software.
+                </p>
+                <img src="images/Jincy.jpg" alt="Jincy Jose Thottathil" class="profile-picture">
+            </div>
         </section>
 
         <section id="projects" class="section">
